@@ -9,3 +9,5 @@ The output should be saved in the file c
 	this command generates the assembly code of a C code and save it in an output file.
 ## 3-name
 	this command compiles a C file and creates an executable named cisfun. The C file name will be saved in the variable $CFILE
+## 4-puts.c
+	this command  prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
