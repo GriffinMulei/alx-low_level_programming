@@ -11,3 +11,5 @@ The output should be saved in the file c
 	this command compiles a C file and creates an executable named cisfun. The C file name will be saved in the variable $CFILE
 ## 4-puts.c
 	this command  prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+##5-printf.c
+	this command s exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
