@@ -7,3 +7,5 @@ The output should be saved in the file c
 	this command compiles a C file but does not link.
 ## 2-assembler
 	this command generates the assembly code of a C code and save it in an output file.
+## 3-name
+	this command compiles a C file and creates an executable named cisfun
