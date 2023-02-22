@@ -1,5 +1,4 @@
-#include "main.h"
-
+#include "7-print_last_digit.c"
 /**
  * main - check the code
  *
