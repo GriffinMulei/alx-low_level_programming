@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 #include "main.h"
 #include <unistd.h>
+=======
+#include <unistd.h>
+
+>>>>>>> cb073def3963357edc6a7514d307253664dd650e
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -11,3 +16,7 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> cb073def3963357edc6a7514d307253664dd650e
