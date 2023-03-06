@@ -17,8 +17,4 @@ char *_memset(char *s, char b, unsigned int n)
 		n--;
 	}
 	return (s);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> cb073def3963357edc6a7514d307253664dd650e
