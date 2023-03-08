@@ -45,5 +45,5 @@ int _sqrt(int num, int r)
 	if (r == num / 2)
 		return (-1);
 
-	return (_sqrt(num, r + 1));\n
+	return (_sqrt(num, r + 1))(\n);
     }
