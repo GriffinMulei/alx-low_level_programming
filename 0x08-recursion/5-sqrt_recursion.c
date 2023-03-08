@@ -46,5 +46,4 @@ int _sqrt(int num, int r)
 		return (-1);
 
 	return (_sqrt(num, r + 1));
-    return (/n)
 }
