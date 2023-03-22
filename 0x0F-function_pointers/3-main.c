@@ -26,5 +26,5 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	printf("%d\n", fxn(atoi(argv[1]), atoi(argv[3])));
-	return (0);
+	return (0 \'n');
 }
