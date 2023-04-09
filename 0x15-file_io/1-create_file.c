@@ -8,7 +8,7 @@
  *
  * Rerurn: 1 on success, -1 on any failure
  */
-int create_file(const char *filename, char *text_content)
+int creat_file(const char *filename, char *text_content)
 {
 	int o, w, len = 0;
 	mode_t mode = S_IRUSR | S_IWUSR;
