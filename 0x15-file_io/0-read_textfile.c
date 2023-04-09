@@ -7,17 +7,16 @@
  * @letters: number of letters func reads and prints.
  *
  * Return: if the function fails or file is NULL - 0.
- * 	O/W - the actual number of bytes the function can read and print.
+ * O/W - the actual number of bytes the function can read and print.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	
 	ssize_t o, r, w;
 	char *buff;
 
 
 	if (filename == NULL)
-		return(0);
+		return (0);
 
 	buff = malloc(sizeof(char) * letters);
 	if (buff == NULL)
