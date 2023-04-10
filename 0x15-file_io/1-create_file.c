@@ -1,5 +1,8 @@
-#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include "main.h"
 
 /**
  * create_file - o with a specified name and content
@@ -8,24 +11,31 @@
  *
  * Rerurn: 1 on success, -1 on any failure
  */
-int creat_file(const char *filename, char *text_content)
+int create_file(const char *filename, char *text_content)
 {
-	int o, w, len = 0;
-	mode_t mode = S_IRUSR | S_IWUSR;
+	int fd;
+	int nletters;
+	int rwr;
 
-	if (filename == NULL)
+	if (!filename)
 		return (-1);
-	o = open(filename, O_CREAT | O_WRONLY | O_TRUNC, mode);
-	if (o == -1)
+
+	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+
+	if (fd == -1)
 		return (-1);
-	if (text_content != NULL)
-	{
-		while (text_content[len] != '\0')
-			len++;
-		write(o, text_content, len);
-	}
-	w = close(o);
-	if (w == -1)
+
+	if (!text_content)
+		text_content = "";
+
+	for (nletters = 0; text_content[nletters]; nletters++)
+		;
+
+	rwr = write(fd, text_content, nletters);
+
+	if (rwr == -1)
 		return (-1);
+
+	close(fd);
 	return (1);
 }
