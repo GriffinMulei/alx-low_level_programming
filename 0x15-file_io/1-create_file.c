@@ -5,7 +5,7 @@
 #include "main.h"
 
 /**
- * create_file - o with a specified name and content
+ * create_file, o with a specified name and content
  * @filename: o to create
  * @text_contet: content to read into the o
  *
