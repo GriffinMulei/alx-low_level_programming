@@ -1,7 +1,3 @@
-#!/bin/python3
-
-#include <stddef.h>
-#include <stdio.h>
 #include "lists.h"
 
 /*

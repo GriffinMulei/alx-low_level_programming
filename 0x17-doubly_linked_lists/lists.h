@@ -1,10 +1,12 @@
 #ifndef LISTS_H
 #define LISTS_H
 
-#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /* Structure for a doubly-linked list node */
-typedef struct dlistint_s {
+typedef struct dlistint_s 
+{
     int n;
     struct dlistint_s *prev;
     struct dlistint_s *next;
