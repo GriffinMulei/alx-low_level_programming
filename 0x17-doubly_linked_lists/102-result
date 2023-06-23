@@ -41,6 +41,6 @@ void find_largest_palindrome(void)
 int main(void)
 {
     find_largest_palindrome();
-    return 0;
+    return (0);
 }
 
